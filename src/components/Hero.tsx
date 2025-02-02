@@ -18,7 +18,7 @@ const Hero = () => {
         </div>
 
         <div className='flex items-center flex-col text-center mt-[7rem] justify-center z-[111111]'>
-        <h1 className='golos font-bold lg:text-[5rem] text-[3rem] lg:w-[700px] w-auto lg:leading-[6rem] leading-[4.5rem]  z-[111111]'>Need a <span className='boska-italic'>website</span> that stands out?</h1>
+        <h1 className='satoshi font-bold lg:text-[5rem] text-[3rem] lg:w-[600px] w-auto lg:leading-[6rem] leading-[4.5rem]  z-[111111]'>Need a <span className='boska-italic'>website</span> that stands out?</h1>
         <p className='lg:w-[500px] w-auto mt-[.5rem]  z-[111111]'>Look no further. Bakhtech Solutions specializes in
         creating visually striking, user-friendly websites.</p>
 
