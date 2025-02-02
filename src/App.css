@@ -10,7 +10,8 @@
 
 body {
   /* overflow: hidden; */
-  font-family: 'Satoshi variable', sans-serif;
+  /* font-family: 'Satoshi variable', sans-serif; */
+  font-family: "Golos Text", Sans-serif;
   height: 100vh;
   width: 100%;
 }
@@ -152,8 +153,17 @@ img {
   src: url('../font/Satoshi-Variable.ttf') format('truetype');
 }
 
+@font-face{
+  font-family: 'Golos Text';
+  src: url('../font/golos.woff2') format('woff2');
+}
+
 .satoshi{
   font-family: "Satoshi Variable";
+}
+
+.golos{
+  font-family: "Golos Text", Sans-serif;
 }
 
 .boska-italic{
