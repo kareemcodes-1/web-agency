@@ -14,9 +14,11 @@ import WhyUs from "./components/why-us/why-us";
 function App() {
 
   useEffect(() => {
-    const lenis = new Lenis({
-      autoRaf: true,
-    });
+    return () => {
+      new Lenis({
+        autoRaf: true,
+      });
+    }
   }, []);
 
   return (
