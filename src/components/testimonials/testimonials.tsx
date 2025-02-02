@@ -8,14 +8,14 @@ const Testimonials = () => {
         <div className='lg:grid flex flex-col grid-cols-3 gap-[1rem]'>
             <article className='bg-white py-[40px] px-[30px] w-full rounded-[22px] box-shadow'>
                    <img src="./people01.png" alt="" className='w-[80px] h-[80px] mb-[32px]'/>
-                   <h1 className='leading-[120%] mb-[16px] text-[32px] font-bold tracking-[-0.01em]'>Sara Jones</h1>
+                   <h1 className='leading-[120%] mb-[16px] text-[25px] font-bold tracking-[-0.01em]'>Sara Jones</h1>
                    <div className='leading-[150%] text-[18px]'>
                    Automate recurring invoices and save time by using pre-built templates. Get paid on time.
                    </div>
             </article>
             <article className='bg-white py-[40px] px-[30px] w-full rounded-[22px] box-shadow'>
                    <img src="./people02.png" alt="" className='w-[80px] h-[80px] mb-[32px]'/>
-                   <h1 className='leading-[120%] mb-[16px] text-[32px] font-bold tracking-[-0.01em]'>Unique Design</h1>
+                   <h1 className='leading-[120%] mb-[16px] text-[25px] font-bold tracking-[-0.01em]'>Unique Design</h1>
                    <div className='leading-[150%] text-[18px]'>
                    Automate recurring invoices and save time by using pre-built templates. Get paid on time.
                    </div>
@@ -23,7 +23,7 @@ const Testimonials = () => {
 
             <article className='bg-white py-[40px] px-[30px] w-full rounded-[22px] box-shadow'>
                    <img src="./people03.png" alt="" className='w-[80px] h-[80px] mb-[32px]'/>
-                   <h1 className='leading-[120%] mb-[16px] text-[32px] font-bold tracking-[-0.01em]'>SEO</h1>
+                   <h1 className='leading-[120%] mb-[16px] text-[25px] font-bold tracking-[-0.01em]'>SEO</h1>
                    <div className='leading-[150%] text-[18px]'>
                    Automate recurring invoices and save time by using pre-built templates. Get paid on time.
                    </div>

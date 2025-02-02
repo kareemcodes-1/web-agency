@@ -16,14 +16,14 @@ const Services = () => {
         <div className='lg:grid flex flex-col grid-cols-2 gap-[1rem] z-[1000]'>
             <article className='bg-white py-[40px] px-[30px] w-full rounded-[22px] box-shadow'>
                    <img src="https://cdn-icons-png.flaticon.com/128/2186/2186383.png" alt="" className='w-[100px] h-[100px] mb-[32px] object-cover'/>
-                   <h1 className='leading-[120%] mb-[16px] text-[32px] font-bold tracking-[-0.01em]'>Website development</h1>
+                   <h1 className='leading-[120%] mb-[16px] lg:text-[32px] text-[25px] font-bold tracking-[-0.01em]'>Website development</h1>
                    <div className='leading-[150%] text-[18px]'>
                    Automate recurring invoices and save time by using pre-built templates. Get paid on time.
                    </div>
             </article>
             <article className='bg-white py-[40px] px-[30px] w-full rounded-[22px] box-shadow'>
                    <img src="https://cdn-icons-png.flaticon.com/128/2186/2186076.png" alt="" className='w-[100px] h-[100px] mb-[32px] object-cover'/>
-                   <h1 className='leading-[120%] mb-[16px] text-[32px] font-bold tracking-[-0.01em]'>Unique Design</h1>
+                   <h1 className='leading-[120%] mb-[16px] lg:text-[32px] text-[25px]  font-bold tracking-[-0.01em]'>Unique Design</h1>
                    <div className='leading-[150%] text-[18px]'>
                    Automate recurring invoices and save time by using pre-built templates. Get paid on time.
                    </div>
@@ -31,7 +31,7 @@ const Services = () => {
 
             <article className='bg-white py-[40px] px-[30px] w-full rounded-[22px] box-shadow'>
                    <img src="https://cdn-icons-png.flaticon.com/128/6564/6564647.png" alt="" className='w-[100px] h-[100px] mb-[32px] object-cover'/>
-                   <h1 className='leading-[120%] mb-[16px] text-[32px] font-bold tracking-[-0.01em]'>SEO</h1>
+                   <h1 className='leading-[120%] mb-[16px] lg:text-[32px] text-[25px]  font-bold tracking-[-0.01em]'>SEO</h1>
                    <div className='leading-[150%] text-[18px]'>
                    Automate recurring invoices and save time by using pre-built templates. Get paid on time.
                    </div>
@@ -39,7 +39,7 @@ const Services = () => {
 
             <article className='bg-white py-[40px] px-[30px] w-full rounded-[22px] box-shadow'>
                    <img src="https://cdn-icons-png.flaticon.com/128/10107/10107063.png" alt="" className='w-[100px] h-[100px] mb-[32px] object-cover'/>
-                   <h1 className='leading-[120%] mb-[16px] text-[32px] font-bold tracking-[-0.01em]'>Automations</h1>
+                   <h1 className='leading-[120%] mb-[16px] lg:text-[32px] text-[25px]  font-bold tracking-[-0.01em]'>Automations</h1>
                    <div className='leading-[150%] text-[18px]'>
                    Automate recurring invoices and save time by using pre-built templates. Get paid on time.
                    </div>
