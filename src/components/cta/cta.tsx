@@ -14,8 +14,8 @@ const CTA = () => {
         </div>
 
         <div className='relative z-[99999] w-full lg:px-[80px] pl-[1rem] gap-[.8rem]'>
-            <h2 className='lg:text-[4rem] text-[2.5rem] font-bold'>Each Project we undertake <br />
-            <span className="boska-italic opacity-[.7]"> is a unique opportunity.</span></h2>
+            <h2 className='lg:text-[4rem] text-[2.5rem] font-bold'>Ready to get started? <br />
+            <span className="boska-italic opacity-[.7]"> Let's make it happen.</span></h2>
             <p className='text-[#ffffffb3]'>Ready to take the next step? Join us now and start transforming your vision into reality with expert support.</p>
             {/* <button type="button" className='button mt-[2rem] !bg-[#caef45] !text-black z-[100]'>BOOK A CALL</button> */}
         </div>

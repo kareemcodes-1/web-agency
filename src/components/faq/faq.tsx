@@ -14,23 +14,23 @@ const Faq = () => {
 
          <Accordion type="single" collapsible>
   <AccordionItem value="item-1">
-    <AccordionTrigger className="lg:text-[1.5rem] text-[1rem]">Why should I get a website for my business?</AccordionTrigger>
-    <AccordionContent>
+    <AccordionTrigger className="lg:text-[1.5rem] text-[1rem] outline-none">Why should I get a website for my business?</AccordionTrigger>
+    <AccordionContent className="text-[1.2rem] leading-[1.3] text-gray-700">
     A website is essential for any business to enhance credibility, reach a wider audience, and drive growth. Also by streamlining operations by automating tasks and backend systems makes it a valuable long-term asset. Even for businesses that don't rely on online sales, a website ensures potential customers can easily find information and contact you, ultimately contributing to sustained business success.
     </AccordionContent>
   </AccordionItem>
 
   <AccordionItem value="item-2">
-    <AccordionTrigger className="lg:text-[1.5rem] text-[1rem]">How much does a website cost?</AccordionTrigger>
-    <AccordionContent>
+    <AccordionTrigger className="lg:text-[1.5rem] text-[1rem] outline-none">How much does a website cost?</AccordionTrigger>
+    <AccordionContent className="text-[1.2rem] leading-[1.3] text-gray-700">
     The pricing of our web design services will depend on multiple factors such as the project scope, timeline and deliverables. Our sites typically cost around the $1,500 USD mark.
     Book a call today for a free quote.
     </AccordionContent>
   </AccordionItem>
 
   <AccordionItem value="item-3">
-    <AccordionTrigger className="lg:text-[1.5rem] text-[1rem]">How long does it take to develop?</AccordionTrigger>
-    <AccordionContent>
+    <AccordionTrigger className="lg:text-[1.5rem] text-[1rem] outline-none">How long does it take to develop?</AccordionTrigger>
+    <AccordionContent className="text-[1.2rem] leading-[1.3] text-gray-700">
     The timeline depends on the size of the project and what deliverables are needed. 
     Typically most sites can be completed anywhere from 2 - 6 weeks.
     </AccordionContent>
@@ -45,7 +45,7 @@ const Faq = () => {
 
   <AccordionItem value="item-5">
     <AccordionTrigger className="lg:text-[1.5rem] text-[1rem]">Will my website be mobile-friendly?</AccordionTrigger>
-    <AccordionContent>
+    <AccordionContent className="text-[1.2rem] leading-[1.3] text-gray-700">
     Absolutely! We ensure all websites are responsive and look great on all devices, including desktop, tablet, and mobile.
     </AccordionContent>
   </AccordionItem>

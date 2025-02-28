@@ -2,7 +2,7 @@ import { ArrowUpRight } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <div className='relative lg:h-[80vh] h-[60vh] w-full'>
+    <div className='relative lg:h-[80vh] h-[60vh] w-full lg:mx-0 mx-[1.rem]'>
         <div>
           <div className='yellow-gradient absolute right-auto bottom-auto  lg:top-0 top-auto left-0 w-[40%] h-auto'>
           <img src="https://assets.website-files.com/623865af2eee366912508587/6241d294ad1a5b72d3002ff7_Blue%20Oval%20Gradient%20(2)-p-800.png" alt="" className="w-full h-full object-contain" />
@@ -18,15 +18,19 @@ const Hero = () => {
         </div>
 
         <div className='flex items-center flex-col text-center mt-[7rem] justify-center z-[111111]'>
-        <h1 className='satoshi font-bold lg:text-[5rem] text-[3rem] lg:w-[600px] w-auto lg:leading-[6rem] leading-[4.5rem]  z-[111111]'>Need a <span className='boska-italic'>website</span> that stands out?</h1>
-        <p className='lg:w-[500px] w-auto mt-[.5rem]  z-[111111]'>Look no further. Bakhtech Solutions specializes in
-        creating visually striking, user-friendly websites.</p>
+          <div className=" relative">
+          <img src="https://cdn.prod.website-files.com/623865af2eee366912508587/623d5980fbc033885da2c334_Highlight_05.svg" loading="lazy" alt='' className='-top-[20px] left-[50px] right-auto bottom-auto h-auto  w-[46px] absolute '/>
+          <h1 className='satoshi font-bold lg:text-[5rem] text-[3rem] lg:w-[800px] w-auto lg:leading-[6rem] leading-[4.5rem]  z-[111111]'>Struggling to get more <span className='boska-italic'>leads</span> for your business?</h1>
+          </div>
+        <p className='lg:w-[500px] w-full mt-[.5rem] text-[1.1rem]  z-[111111]'>Look no further. We specialize in developing custom websites and systems
+        that reflect your brands identity and drive sales. </p>
 
         <button 
            type="button" 
             className='!lg:flex items-center gap-[.5rem] button mt-[2rem] hover:bg-[#caef45] hover:text-black z-[100] group transition'
           >
-             BOOK A CALL 
+              {/* Yes, I Need More Leads! */}
+              Get More Leads Now!
            <ArrowUpRight className='w-[2rem] h-[2rem] transition-transform transform group-hover:rotate-[43deg]' />
         </button>
 

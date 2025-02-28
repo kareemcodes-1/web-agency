@@ -6,7 +6,7 @@ const Navbar = () => {
 
     <nav className="flex items-center justify-between">
       <a className="" href="/">
-        <img src="./logo-1.jpeg" alt="" className='lg:w-[10rem] w-[7rem] object-contain'/>
+        <h1 className="text-[1.5rem] font-bold">kb</h1>
       </a>
 
       

@@ -9,6 +9,7 @@ import CTA from "./components/cta/cta";
 import Footer from "./components/footer/footer";
 import Navbar from "./components/navbar/navbar";
 import WhyUs from "./components/why-us/why-us";
+import About from "./components/about/about";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
        <svg className="pointer-events-none absolute cursor-none"><filter id="grainy"><feTurbulence type="turbulence" baseFrequency="0.5"></feTurbulence><feColorMatrix type="saturate" values="0"></feColorMatrix></filter></svg>
        <Navbar />
          <Hero />
+         <About />
          <Services />
          <Projects />
          <WhyUs />
