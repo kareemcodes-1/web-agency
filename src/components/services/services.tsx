@@ -22,7 +22,7 @@ const Services = () => {
 
       <div className="flex lg:flex-row flex-col lg:items-center items-start justify-between mb-[3rem]">
       <h1 className="lg:text-[5rem] text-[2.5rem] mb-[1.5rem] text-black font-bold lg:text-center text-start">
-        What we <span className="boska-italic">offer</span>
+        How i can <span className="boska-italic">help you</span>
       </h1>
 
       <p className="lg:w-[500px] w-full lg:text-[1.2rem] text-[1rem]">
