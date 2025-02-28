@@ -67,7 +67,7 @@ const Projects = () => {
             <Marquee speed={60} gradient={false} className="flex gap-[2rem]" >
                 <a href='https://hyperkicks.vercel.app' target='_blank' className="flex items-center justify-between gap-[1rem] z-[10000] mr-[3rem]" onMouseMove={handleMouseOver} onMouseLeave={handleMouseLeave}>
                     <div className="">
-                      <img src="/hyper.png" alt="" className=" lg:object-cover object-contain lg:h-[25rem] h-[18rem]"/>
+                      <img src="/hyper.png" alt="" className="w-full lg:object-cover object-contain lg:h-[25rem] h-[18rem]"/>
                       <div className='flex items-center justify-between'>
                       <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">Hyper Kicks</h2>
 
