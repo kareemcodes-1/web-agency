@@ -49,7 +49,7 @@ const Projects = () => {
    
     <div className='bg-black project text-white relative overflow-x-hidden'>
         <div className='absolute left-[-18%] top[40%] right-auto bottom-auto w-[498.5px] h-[311px] z-[100]'>
-            <div className='absolute left-0 top-0 right-auto bottom-auto w-[652px] h-[340px]'>
+            <div className='absolute left-0 top-0 lg:right-auto right-[0rem] bottom-auto lg:w-[652px] w-[400px] h-[340px]'>
                 <img className='w-full h-full object-fill' src="https://cdn.prod.website-files.com/623865af2eee366912508587/6241d295b23ac97b3872a90f_Green%20Oval%20Gradient%20(2).png" alt="" />
             </div>
 

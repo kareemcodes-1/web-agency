@@ -8,22 +8,20 @@ const WhyUs = () => {
               <h2 className='lg:text-[4.5rem] text-[2.5rem] font-bold mb-[1rem]'>Why<span className='boska-italic text-black'> me?</span></h2>
           </div>
 
-          <div>
               <p className=' text-[1.2rem] lg:leading-[32px]'>I specializing in website development, I don’t just build websites I create digital experiences that drive real business growth. My focus is on crafting websites that not only look great but are designed to attract more leads and convert visitors into loyal customers</p>
-          </div>
         </div> 
 
         <div className='relative w-full max-w-[1000px] mx-auto'>
               <div className='why-us-gradient absolute top-auto left-0 bottom-[-150px] w-full h-[600px]'>
-                   <div className='yellow-gradient absolute left-[-10%] top-0 right-auto bottom-0 w-[60%]'>
+                   <div className='lg:block hidden yellow-gradient absolute left-[-10%] top-0 right-auto bottom-0 w-[60%]'>
                        <img src="https://cdn.prod.website-files.com/623865af2eee366912508587/6241b2d41327941b39683db0_Peach%20Gradient%20Image%20(1).png" alt="" className='w-full h-full object-contain'/>
                    </div>
 
-                   <div className='green-gradient absolute left-0 top-0 right-0 bottom-0 w-[70%] mx-auto opacity-[0.6]'>
+                   <div className='lg:block hidden green-gradient absolute left-0 top-0 right-0 bottom-0 w-[70%] mx-auto opacity-[0.6]'>
                        <img src="https://cdn.prod.website-files.com/623865af2eee366912508587/6241b2d3856d04a1b1333cd4_Green%20Gradient%20Image%20(1).png" alt="" className='w-full h-full object-contain'/>
                    </div>
 
-                   <div className='blue-gradient absolute left-auto top-0 right-[-10%] bottom-0 w-[60%]'>
+                   <div className=' lg:block hidden blue-gradient absolute left-auto top-0 right-[-10%] bottom-0 w-[60%]'>
                        <img src="https://cdn.prod.website-files.com/623865af2eee366912508587/6241b2d3e22f1763bfb3a480_Blue%20Gradient%20Image%20(2).png" alt="" className='w-full h-full object-contain'/>
                    </div>
               </div>
