@@ -67,7 +67,7 @@ const Projects = () => {
             <Marquee speed={60} gradient={false} className="flex gap-[2rem]" >
                 <a href='https://hyperkicks.vercel.app' target='_blank' className="flex items-center justify-between gap-[1rem] z-[10000] mr-[3rem]" onMouseMove={handleMouseOver} onMouseLeave={handleMouseLeave}>
                     <div className="">
-                      <img src="/hyper.png" alt="" className="w-full object-cover lg:h-[25rem] h-[18rem]"/>
+                      <img src="/hyper.png" alt="" className=" lg:object-cover object-contain lg:h-[25rem] h-[18rem]"/>
                       <div className='flex items-center justify-between'>
                       <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">Hyper Kicks</h2>
 
@@ -82,7 +82,7 @@ const Projects = () => {
 
                 <a href='https://chiluxury.vercel.app' target='_blank' className="flex items-center justify-between gap-[1rem] z-[10000] mr-[3rem]" onMouseMove={handleMouseOver} onMouseLeave={handleMouseLeave}>
                     <div className="">
-                      <img src="/jew.png" alt="" className="w-full object-cover lg:h-[25rem] h-[18rem]"/>
+                      <img src="/jew.png" alt="" className="w-full lg:object-cover object-contain lg:h-[25rem] h-[18rem]"/>
                       <div className='flex items-center justify-between'>
                       <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">Chi Luxury</h2>
 
@@ -97,7 +97,7 @@ const Projects = () => {
 
                 <a href='https://carlhomes.vercel.app' target='_blank' className="flex items-center justify-between gap-[1rem] z-[10000] mr-[3rem]" onMouseMove={handleMouseOver} onMouseLeave={handleMouseLeave}>
                     <div className="">
-                      <img src="/carlhomes.png" alt="" className="w-full object-cover lg:h-[25rem] h-[18rem]"/>
+                      <img src="/carlhomes.png" alt="" className="w-full lg:object-cover object-contain lg:h-[25rem] h-[18rem]"/>
                       <div className='flex items-center justify-between'>
                       <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">Carl Homes</h2>
 
@@ -112,7 +112,7 @@ const Projects = () => {
 
                 <a href='' target='_blank' className="flex items-center justify-between gap-[1rem] z-[10000] mr-[3rem]" onMouseMove={handleMouseOver} onMouseLeave={handleMouseLeave}>
                     <div className="">
-                      <img src="/patty.png" alt="" className="w-full object-cover lg:h-[25rem] h-[18rem]"/>
+                      <img src="/patty.png" alt="" className="w-full lg:object-cover object-contain lg:h-[25rem] h-[18rem]"/>
                       <div className='flex items-center justify-between'>
                       <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">Patties</h2>
 
@@ -127,7 +127,7 @@ const Projects = () => {
 
                 <a href='https://bellavida-spa.vercel.app' target='_blank' className="flex items-center justify-between gap-[1rem] z-[10000] mr-[3rem]" onMouseMove={handleMouseOver} onMouseLeave={handleMouseLeave}>
                     <div className="">
-                      <img src="/bellavida.png" alt="" className="w-full object-cover lg:h-[25rem] h-[18rem]"/>
+                      <img src="/bellavida.png" alt="" className="w-full lg:object-cover object-contain lg:h-[25rem] h-[18rem]"/>
                       <div className='flex items-center justify-between'>
                       <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">Bellavida Spa</h2>
 
