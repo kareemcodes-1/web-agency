@@ -1,6 +1,6 @@
 const Services = () => {
   return (
-    <div className="lg:mx-[3rem] mx-[1rem] mb-[7rem] relative">
+    <div className="services lg:mx-[3rem] mx-[1rem] mb-[7rem] relative">
       <div className="top-[220px] absolute left-0 right-0 bottom-0 w-full h-[642px] max-w-[1005px] mx-auto">
         <div className="yellow-gradient absolute left-auto top-0 right-0 bottom-auto w-[70%] opacity-[0.7] z-[-1]">
           <img

@@ -1,6 +1,11 @@
 
 
 const Navbar = () => {
+
+  const handleScrollDown = (section: string) => {
+      document.querySelector(section)?.scrollIntoView({behavior: "smooth"});
+  }
+
   return (
     <header className="lg:block hidden w-full px-[1.5rem] py-[1rem] ">
 
@@ -12,29 +17,29 @@ const Navbar = () => {
       
       <ul className="lg:flex hidden items-center gap-[2rem] text-black">
             <a
-              href={``}
-              className="text-[1.1rem] hover:underline transition"
+              onClick={() => handleScrollDown('.about')}
+              className="text-[1.1rem] hover:underline transition cursor-pointer"
             >
               About
             </a>
 
             <a
-              href={``}
-              className="text-[1.1rem] hover:underline transition"
+               onClick={() => handleScrollDown('.services')}
+              className="text-[1.1rem] hover:underline transition cursor-pointer"
             >
               Services
             </a>
 
             <a
-              href={``}
-              className="text-[1.1rem] hover:underline transition"
+               onClick={() => handleScrollDown('.projects')}
+              className="text-[1.1rem] hover:underline transition cursor-pointer"
             >
               Projects
             </a>
 
             <a
-              href={``}
-              className="text-[1.1rem] hover:underline transition"
+               onClick={() => handleScrollDown('.reviews')}
+              className="text-[1.1rem] hover:underline transition cursor-pointer"
             >
              Reviews
             </a>

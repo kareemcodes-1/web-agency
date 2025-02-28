@@ -1,6 +1,6 @@
 const Testimonials = () => {
   return (
-    <div className="lg:mx-[3rem] mx-[1rem] my-[6rem]">
+    <div className="reviews lg:mx-[3rem] mx-[1rem] my-[6rem]">
       <div className="flex lg:flex-row flex-col lg:items-center items-start justify-between mb-[3rem]">
         <h2 className="lg:text-[4.5rem] text-[2.5rem] font-bold text-black mb-[1.5rem] lg:text-center text-start">
           Customer <span className="boska-italic"> Reviews</span>
