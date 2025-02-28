@@ -134,9 +134,20 @@ img {
   display: inline-block;
 }
 
+h1, h2, h3{
+  font-family: 'CabinetGrotesk-Medium';
+}
+
 @font-face{
   font-family: 'Boska';
   src: url('../font/Boska-BoldItalic.otf') format('opentype');
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face{
+  font-family: 'CabinetGrotesk-Medium';
+  src: url('../font/CabinetGrotesk-Medium.ttf') format('truetype');
   font-style: normal;
   font-display: auto;
 }
@@ -160,6 +171,10 @@ img {
 
 .satoshi{
   font-family: "Satoshi Variable";
+}
+
+.cabin{
+  font-family: 'CabinetGrotesk-Medium';
 }
 
 .golos{
