@@ -20,7 +20,7 @@ const Hero = () => {
         <div className='flex items-center flex-col text-center lg:mt-[7rem] mt-[2rem] justify-center z-[111111]'>
           <div className=" relative">
           <img src="https://cdn.prod.website-files.com/623865af2eee366912508587/623d5980fbc033885da2c334_Highlight_05.svg" loading="lazy" alt='' className='lg:block hidden -top-[20px] left-[50px] right-auto bottom-auto h-auto  w-[46px] absolute '/>
-          <h1 className='cabin font-bold lg:text-[5rem] text-[3rem] lg:w-[800px] w-full lg:leading-[6rem] leading-[4.5rem]  z-[111111]'>Struggling to get more <span className='boska-italic'>leads</span> for your business?</h1>
+          <h1 className='satoshi font-bold lg:text-[5rem] text-[3rem] lg:w-[800px] w-full lg:leading-[6rem] leading-[4.5rem]  z-[111111]'>Struggling to get more <span className='boska-italic'>leads</span> for your business?</h1>
           </div>
         <p className='lg:w-[500px] w-full mt-[.5rem] text-[1.1rem]  z-[111111]'>Look no further. We specialize in developing custom websites and systems
         that reflect your brands identity and drive sales. </p>
