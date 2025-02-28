@@ -8,7 +8,7 @@ import {
 
 const Faq = () => {
   return (
-    <div className='lg:mx-[2rem] mx-[1rem] my-[6rem]'>
+    <div className='lg:mx-[2rem] mx-[1rem] my-[6rem] '>
          <div className='lg:grid flex flex-col grid-cols-2 gap-[1rem]'>
          <h2 className="lg:text-[5rem] text-[2.5rem] font-bold text-black">Frequently<span className="boska-italic"> Asked Questions</span></h2>
 

@@ -42,7 +42,7 @@ const Footer = () => {
 
       </div>
 
-      <p className='text-center border-t  mx-auto flex items-center justify-center text-[1.1rem] w-full py-[1rem] mt-[1.5rem]'>© 2024 &nbsp; <span className="nav-logo font-bold text-[1.3rem]">bykareem</span> &nbsp; All right reserved.</p>
+      <p className='text-center border-t  mx-auto flex items-center justify-center text-[1.1rem] w-full py-[1rem] mt-[1.5rem]'><span className="lg:block hidden">© 2024</span> &nbsp; <span className="nav-logo font-bold text-[1.3rem]">bykareem <sup>©</sup></span> &nbsp; <span className=" lg:block hidden">All Rights Reserved</span></p>
     </div>
   </footer>
   )

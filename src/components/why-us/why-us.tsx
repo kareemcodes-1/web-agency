@@ -2,7 +2,7 @@
 
 const WhyUs = () => {
   return (
-    <section className='my-[5rem] lg:mx-[2rem] mx-[1rem]'>
+    <section className='my-[5rem] lg:mx-[2rem] mx-[1rem] '>
           <div className='w-full lg:max-w-[580px] mb-[64px] text-center mx-auto'>
           <div>
               <h2 className='lg:text-[4.5rem] text-[2.5rem] font-bold mb-[1rem]'>Why<span className='boska-italic text-black'> me?</span></h2>

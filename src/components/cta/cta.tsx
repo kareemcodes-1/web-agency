@@ -2,7 +2,7 @@ import Marquee from "react-fast-marquee";
 
 const CTA = () => {
   return (
-    <div className='bg-black text-white rounded-[16px] py-[80px] flex flex-col items-start relative lg:mx-[2rem] mx-[1.5rem] mt-[3rem]'>
+    <div className='bg-black text-white rounded-[16px] py-[80px] flex flex-col items-start relative lg:mx-[2rem] mx-[1rem] mt-[3rem]'>
         <div className='cta-gradient absolute left-auto top-[23%] right-[0%] bottom-auto z-[1111] w-[281px] h-[208px]'>
              <div className='absolute left-auto -top-[10%] -right-[10%] bottom-auto w-full'>
                   <img src="https://assets.website-files.com/623865af2eee366912508587/6241d295b23ac97b3872a90f_Green%20Oval%20Gradient%20(2)-p-500.png" alt="" className='w-full h-full object-fill'/>

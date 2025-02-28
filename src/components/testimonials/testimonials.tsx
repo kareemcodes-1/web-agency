@@ -1,6 +1,6 @@
 const Testimonials = () => {
   return (
-    <div className="reviews lg:mx-[3rem] mx-[1rem] my-[6rem]">
+    <div className="reviews lg:mx-[3rem] mx-[1rem] my-[6rem] ">
       <div className="flex lg:flex-row flex-col lg:items-center items-start justify-between mb-[3rem]">
         <h2 className="lg:text-[4.5rem] text-[2.5rem] font-bold text-black mb-[1.5rem] lg:text-center text-start">
           Customer <span className="boska-italic"> Reviews</span>
@@ -34,7 +34,7 @@ const Testimonials = () => {
             className="w-[80px] h-[80px] mb-[32px]"
           />
           <h1 className="leading-[120%] mb-[16px] text-[25px] font-bold tracking-[-0.01em]">
-            Yuri Arkiash
+            Yuri Arkash
           </h1>
           <div className="leading-[150%] text-[18px]">
           He delivered a customized solution that addressed all of our business needs. The website is sleek, functional, and improved our customer experience.

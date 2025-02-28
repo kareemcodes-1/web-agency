@@ -18,7 +18,6 @@ body {
   /* font-family: "Golos Text", Sans-serif; */
   height: 100vh;
   width: 100%;
-  overflow-x: hidden;
 }
 
 body:before{

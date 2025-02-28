@@ -12,12 +12,12 @@ const Hero = () => {
         <img src="https://assets.website-files.com/623865af2eee366912508587/6241b2d3856d04a1b1333cd4_Green%20Gradient%20Image%20(1)-p-500.png"  alt="" className="w-full h-full object-contain"/>
         </div>
 
-        <div className='blue-gradient absolute lg:bottom-[-44%] bottom-auto lg:w-[1000px] w-full left-0 top-auto right-auto lg:max-w-[1000px]'>
+        <div className='blue-gradient absolute lg:bottom-[-44%] bottom-auto lg:w-[1000px] left-0 lg:top-auto top-[-12rem] lg:right-auto right-[-4rem] lg:max-w-[1000px]'>
         <img src="https://cdn.prod.website-files.com/623865af2eee366912508587/6241d294ad1a5b72d3002ff7_Blue%20Oval%20Gradient%20(2).png"  alt="" className="w-full h-full object-fill"/>
         </div>
         </div>
 
-        <div className='flex items-center flex-col text-center lg:mt-[7rem] mt-[4rem] justify-center z-[111111]'>
+        <div className='flex items-center flex-col text-center lg:mt-[7rem] mt-[5.5rem] justify-center z-[111111]'>
           <div className=" relative">
           <img src="https://cdn.prod.website-files.com/623865af2eee366912508587/623d5980fbc033885da2c334_Highlight_05.svg" loading="lazy" alt='' className='lg:block hidden -top-[20px] left-[50px] right-auto bottom-auto h-auto  w-[46px] absolute '/>
           <h1 className='satoshi font-bold lg:text-[5rem] text-[3rem] lg:w-[800px] w-full lg:leading-[6rem] leading-[4.5rem]  z-[111111]'>Struggling to get more <span className='boska-italic'>leads</span> for your business?</h1>
