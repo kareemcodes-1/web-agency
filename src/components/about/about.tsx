@@ -2,7 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 
 const About = () => {
   return (
-    <div className="lg:mx-[3rem] mx-[1.5rem] py-[2rem] pb-[10rem]">
+    <div className="lg:mx-[3rem] mx-[1.5rem] lg:pt-[2rem] pt-[5rem] lg:pb-[10rem] pb-[7rem]">
       <div className="lg:grid flex flex-col grid-cols-2 gap-[2rem]">
         <img
           src="/about.jpeg"
