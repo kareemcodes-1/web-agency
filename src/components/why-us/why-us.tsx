@@ -2,14 +2,14 @@
 
 const WhyUs = () => {
   return (
-    <section className='my-[5rem] lg:mx-[2rem] mx-[1.5rem]'>
+    <section className='my-[5rem] lg:mx-[2rem] mx-[1rem]'>
           <div className='w-full lg:max-w-[580px] mb-[64px] text-center mx-auto'>
           <div>
               <h2 className='lg:text-[4.5rem] text-[2.5rem] font-bold mb-[1rem]'>Why<span className='boska-italic text-black'> me?</span></h2>
           </div>
 
           <div>
-              <p className=' text-[1.2rem] lg:leading-[32px]'>As a freelancer specializing in website development, I don’t just build websites I create digital experiences that drive real business growth. My focus is on crafting websites that not only look great but are designed to attract more leads and convert visitors into loyal customers</p>
+              <p className=' text-[1.2rem] lg:leading-[32px]'>I specializing in website development, I don’t just build websites I create digital experiences that drive real business growth. My focus is on crafting websites that not only look great but are designed to attract more leads and convert visitors into loyal customers</p>
           </div>
         </div> 
 
@@ -34,6 +34,8 @@ const WhyUs = () => {
 
               <div className='relative w-full grid-idk !gap-[5rem]'>
                   <div className='relative'>
+                      <h1 className="text-[2rem] font-bold nav-logo text-center">bykareem<sup>©</sup></h1>
+
                        <div className='why-us-feature-wrapper'>
                             <div className='mb-[32px] lg:text-[1.1rem] text-[.925rem] leading-[24px] font-bold tracking-[0.12em] uppercase'>
                                 Features included :
@@ -66,12 +68,13 @@ const WhyUs = () => {
 
                             <div className='flex mb-[16px] justify-start items-start'>
                                 <img src="https://cdn.prod.website-files.com/623865af2eee366912508587/623cb4df9afa8cfe86eea257_CheckCircle%20Green.svg" className='lg:w-[32px] w-[30px] lg:h-[32px] h-[30px] lg:mr-[20px] mr-[15px]' alt="" />
-                                <div className='lg:text-[20px] text-[18px] leading-[32px] font-medium'>AI Agent For Sales  </div>
+                                <div className='lg:text-[20px] text-[18px] leading-[32px] font-medium'>AI Agent For Lead Generation  </div>
                             </div>
                        </div>
                   </div>
 
                   <div className='relative'>
+                      <h1 className="lg:text-[2rem] text-[1.5rem] font-bold text-center">Other Web Designers</h1>
                        <div className='why-us-feature-wrapper'>
                             <div className='mb-[32px] lg:text-[1.1rem] text-[.925rem] leading-[24px] font-bold tracking-[0.12em] uppercase'>
                                 Features not included :
@@ -89,12 +92,12 @@ const WhyUs = () => {
 
                             <div className='flex mb-[16px] justify-start items-start'>
                                 <img src="https://cdn.prod.website-files.com/623865af2eee366912508587/623cb4e07a1868188d4408d2_XCircle.svg" className='lg:w-[32px] w-[30px] lg:h-[32px] h-[30px] lg:mr-[20px] mr-[15px]' alt="" />
-                                <div className='lg:text-[20px] text-[18px] leading-[32px] font-medium'>UnResponsive Design</div>
+                                <div className='lg:text-[20px] text-[18px] leading-[32px] font-medium'>Nonresponsive Design</div>
                             </div>
 
                             <div className='flex mb-[16px] justify-start items-start'>
                                 <img src="https://cdn.prod.website-files.com/623865af2eee366912508587/623cb4e07a1868188d4408d2_XCircle.svg" className='lg:w-[32px] w-[30px] lg:h-[32px] h-[30px] lg:mr-[20px] mr-[15px]' alt="" />
-                                <div className='lg:text-[20px] text-[18px] leading-[32px] font-medium'>No hidden fees. No surprises</div>
+                                <div className='lg:text-[20px] text-[18px] leading-[32px] font-medium'>Self-Centered Approach</div>
                             </div>
 
                             <div className='flex mb-[16px] justify-start items-start'>
@@ -104,7 +107,7 @@ const WhyUs = () => {
 
                             <div className='flex mb-[16px] justify-start items-start'>
                                 <img src="https://cdn.prod.website-files.com/623865af2eee366912508587/623cb4e07a1868188d4408d2_XCircle.svg" className='lg:w-[32px] w-[30px] lg:h-[32px] h-[30px] lg:mr-[20px] mr-[15px]' alt="" />
-                                <div className='lg:text-[20px] text-[18px] leading-[32px] font-medium'>Poor AI integration</div>
+                                <div className='lg:text-[20px] text-[18px] leading-[32px] font-medium'>No AI integration</div>
                             </div>
                        </div>
                   </div>

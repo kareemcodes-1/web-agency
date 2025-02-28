@@ -58,7 +58,7 @@ const Projects = () => {
             </div>
         </div>
 
-        <div className="py-[50px] lg:mx-[3rem] mx-[1.5rem]">
+        <div className="py-[50px] lg:mx-[3rem] mx-[1rem]">
             <div className="w-full mb-[2rem]">
                 <h2 className="lg:text-[6rem] text-[3rem] font-bold"><span className="boska-italic opacity-[.7]">Selected</span> Projects</h2>
             </div>
@@ -74,7 +74,7 @@ const Projects = () => {
                       <div className='flex items-center gap-[.5rem] mt-[.5rem]'>
                       <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>E-commerce</div>
                       <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>Sneaker</div>
-                      <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>2024</div>
+                      <div className={"text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>2024</div>
                       </div>
                       </div>
                     </div>
@@ -89,7 +89,7 @@ const Projects = () => {
                       <div className='flex items-center gap-[.5rem] mt-[.5rem]'>
                       <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>E-commerce</div>
                       <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>Jewellery</div>
-                      <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>2024</div>
+                      <div className={"text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>2024</div>
                       </div>
                       </div>
                     </div>
@@ -104,7 +104,7 @@ const Projects = () => {
                       <div className='flex items-center gap-[.5rem] mt-[.5rem]'>
                       <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>Real Estate</div>
                       <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>Design</div>
-                      <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>2024</div>
+                      <div className={"text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>2024</div>
                       </div>
                       </div>
                     </div>
@@ -119,7 +119,7 @@ const Projects = () => {
                       <div className='flex items-center gap-[.5rem] mt-[.5rem]'>
                       <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>E-commerce</div>
                       <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>Burger</div>
-                      <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>2024</div>
+                      <div className={"text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>2024</div>
                       </div>
                       </div>
                     </div>
@@ -134,7 +134,7 @@ const Projects = () => {
                       <div className='flex items-center gap-[.5rem] mt-[.5rem]'>
                       <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>Beauty Spa</div>
                       <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>Design</div>
-                      <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>2024</div>
+                      <div className={"text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase"}>2024</div>
                       </div>
                       </div>
                     </div>

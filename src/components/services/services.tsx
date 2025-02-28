@@ -1,6 +1,6 @@
 const Services = () => {
   return (
-    <div className="lg:mx-[3rem] mx-[1.5rem] mb-[7rem] relative">
+    <div className="lg:mx-[3rem] mx-[1rem] mb-[7rem] relative">
       <div className="top-[220px] absolute left-0 right-0 bottom-0 w-full h-[642px] max-w-[1005px] mx-auto">
         <div className="yellow-gradient absolute left-auto top-0 right-0 bottom-auto w-[70%] opacity-[0.7] z-[-1]">
           <img
@@ -25,7 +25,7 @@ const Services = () => {
         What we <span className="boska-italic">offer</span>
       </h1>
 
-      <p className="lg:w-[500px] w-full text-[1.2rem]">
+      <p className="lg:w-[500px] w-full lg:text-[1.2rem] text-[1rem]">
         Frustrated with websites that don't reflect your brand or drive growth?
         I craft premium web experiences that captivate and help you focus on
         growing your business.
@@ -44,7 +44,7 @@ const Services = () => {
             Website development
           </h1>
           <div className="leading-[150%] text-[18px]">
-          A high quality website developed to captivate and convert can elevate your brand to new heights, gain online presence and get you more leads. Delivering seamless experiences with a focus on animation keeping your audience engaged and returning.
+          A high quality website developed to captivate and elevate your brand to new heights, gain online presence and get you more leads. Delivering seamless experiences with a focus on animation keeping your audience engaged and returning.
           </div>
         </article>
         <article className="bg-white py-[40px] px-[30px] w-full rounded-[22px] box-shadow">
@@ -71,7 +71,7 @@ const Services = () => {
             SEO
           </h1>
           <div className="leading-[150%] text-[18px]">
-          Your website deserves to be seen. I optimize your online presence to elevate your visibility in search results, when potential search for (business type) near me.
+          Your website deserves to be seen. I optimize your online presence to elevate your visibility in search results, when potential search for your [business type] near me.
           </div>
         </article>
 

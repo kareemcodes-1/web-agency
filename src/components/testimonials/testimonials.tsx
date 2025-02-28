@@ -1,12 +1,12 @@
 const Testimonials = () => {
   return (
-    <div className="lg:mx-[3rem] mx-[1.5rem] my-[6rem]">
+    <div className="lg:mx-[3rem] mx-[1rem] my-[6rem]">
       <div className="flex lg:flex-row flex-col lg:items-center items-start justify-between mb-[3rem]">
         <h2 className="lg:text-[4.5rem] text-[2.5rem] font-bold text-black mb-[1.5rem] lg:text-center text-start">
           Customer <span className="boska-italic"> Reviews</span>
         </h2>
 
-        <p className="lg:w-[500px] w-full text-[1.2rem]">
+        <p className="lg:w-[500px] w-full lg:text-[1.2rem] text-[1rem]">
           Here’s what my clients say about our collaboration. Their satisfaction
           and meeting expectations are my top priorities, ensuring the best
           experience possible.
@@ -37,7 +37,7 @@ const Testimonials = () => {
             Yuri Arkiash
           </h1>
           <div className="leading-[150%] text-[18px]">
-          They delivered a customized solution that addressed all of our business needs. The website is sleek, functional, and improved our customer experience.
+          He delivered a customized solution that addressed all of our business needs. The website is sleek, functional, and improved our customer experience.
           </div>
         </article>
 
@@ -48,10 +48,10 @@ const Testimonials = () => {
             className="w-[80px] h-[80px] mb-[32px]"
           />
           <h1 className="leading-[120%] mb-[16px] text-[25px] font-bold tracking-[-0.01em]">
-            Kourtney Falls
+            Miles Falls
           </h1>
           <div className="leading-[150%] text-[18px]">
-            I love the website and also their AI agent works very well on the site
+          I absolutely love the website! The AI agent works seamlessly, providing a smooth and efficient experience for visitors. It's a game-changer for our online presence.
           </div>
         </article>
 

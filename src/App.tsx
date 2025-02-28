@@ -10,6 +10,7 @@ import Footer from "./components/footer/footer";
 import Navbar from "./components/navbar/navbar";
 import WhyUs from "./components/why-us/why-us";
 import About from "./components/about/about";
+import Trigger from "./components/trigger/trigger";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
        <Navbar />
          <Hero />
          <About />
+         <Trigger />
          <Services />
          <Projects />
          <WhyUs />

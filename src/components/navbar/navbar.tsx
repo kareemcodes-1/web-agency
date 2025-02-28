@@ -2,11 +2,11 @@
 
 const Navbar = () => {
   return (
-    <header className=" w-full px-[1.5rem] py-[1rem] ">
+    <header className="lg:block hidden w-full px-[1.5rem] py-[1rem] ">
 
     <nav className="flex items-center justify-between">
       <a className="" href="/">
-        <h1 className="text-[1.5rem] font-bold">kb</h1>
+        <h1 className="text-[1.5rem] font-bold nav-logo">bykareem<sup>©</sup></h1>
       </a>
 
       
