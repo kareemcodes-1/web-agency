@@ -165,7 +165,7 @@ const Projects = () => {
 
                       <div className='flex items-center gap-[.5rem] mt-[.5rem]'>
                       <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"}>E-commerce</div>
-                      <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"}>Jewellery</div>
+                      <div className={"text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"}>Design</div>
                       <div className={"text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"}>2024</div>
                       </div>
                       </div>
