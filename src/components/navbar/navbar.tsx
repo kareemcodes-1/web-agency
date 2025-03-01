@@ -1,3 +1,4 @@
+import AnimatedContent from "../../lib/animated-content";
 
 
 const Navbar = () => {
@@ -10,45 +11,96 @@ const Navbar = () => {
     <header className="lg:block hidden w-full px-[1.5rem] py-[1rem] ">
 
     <nav className="flex items-center justify-between">
+    <AnimatedContent
+            distance={20}
+            direction="vertical"
+            reverse={false}
+            config={{ tension: 80, friction: 20 }}
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+          >
       <a className="" href="/">
         <h1 className="text-[1.5rem] font-bold nav-logo">bykareem<sup>©</sup></h1>
       </a>
+      </AnimatedContent>
 
       
       <ul className="lg:flex hidden items-center gap-[2rem] text-black">
+      <AnimatedContent
+            distance={20}
+            direction="vertical"
+            reverse={false}
+            config={{ tension: 80, friction: 20 }}
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+          >
             <a
               onClick={() => handleScrollDown('.about')}
               className="text-[1.1rem] hover:underline transition cursor-pointer"
             >
               About
             </a>
+            </AnimatedContent>
 
+        <AnimatedContent
+            distance={20}
+            direction="vertical"
+            reverse={false}
+            config={{ tension: 80, friction: 20 }}
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+          >
             <a
                onClick={() => handleScrollDown('.services')}
               className="text-[1.1rem] hover:underline transition cursor-pointer"
             >
               Services
             </a>
+          </AnimatedContent>
 
+          <AnimatedContent
+            distance={20}
+            direction="vertical"
+            reverse={false}
+            config={{ tension: 80, friction: 20 }}
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+          >
             <a
                onClick={() => handleScrollDown('.projects')}
               className="text-[1.1rem] hover:underline transition cursor-pointer"
             >
               Projects
             </a>
+          </AnimatedContent>
 
+          <AnimatedContent
+            distance={20}
+            direction="vertical"
+            reverse={false}
+            config={{ tension: 80, friction: 20 }}
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+          >
             <a
                onClick={() => handleScrollDown('.reviews')}
               className="text-[1.1rem] hover:underline transition cursor-pointer"
             >
              Reviews
             </a>
+            </AnimatedContent>
       </ul>
 
-
-      <button type="button" className=' !hidden items-center gap-[.5rem] button lg:mt-[2rem] hover:bg-[#caef45] hover:text-black  transition z-[100] lg:!py-[.9rem] !py-[.5rem] lg:!px-[1.1rem] !px-[1rem]'>
-        Get In Touch
-      </button>
 
     </nav>
   </header>

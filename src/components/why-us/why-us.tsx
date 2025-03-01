@@ -1,3 +1,5 @@
+import FadeContent from "../../lib/fade-content"
+import SplitText from "../../lib/split-text"
 
 
 const WhyUs = () => {
@@ -5,10 +7,31 @@ const WhyUs = () => {
     <section className='my-[5rem] lg:mx-[2rem] mx-[1rem] '>
           <div className='w-full lg:max-w-[580px] mb-[64px] text-center mx-auto'>
           <div>
-              <h2 className='lg:text-[4.5rem] text-[2.5rem] font-bold mb-[1rem]'>Why<span className='boska-italic text-black'> me?</span></h2>
+              {/* <h2 className='lg:text-[4.5rem] text-[2.5rem] font-bold mb-[1rem]'>Why<span className='boska-italic text-black'> me?</span></h2> */}
+              <SplitText
+                text="Why"
+                delay={30}
+                animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                // easing="easeOutCubic"
+                className="lg:text-[4.5rem] text-[2.5rem] font-bold mb-[1rem] text-black"
+                threshold={0.2}
+                rootMargin="0px" />
+
+               <SplitText
+                text="me?"
+                delay={30}
+                animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                // easing="easeOutCubic"
+                className="lg:text-[4.5rem] text-[2.5rem] font-bold mb-[1rem] boska-italic text-black"
+                threshold={0.2}
+                rootMargin="0px" />
           </div>
 
+          <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
               <p className=' text-[1.2rem] lg:leading-[32px]'>I specializing in website development, I don’t just build websites I create digital experiences that drive real business growth. My focus is on crafting websites that not only look great but are designed to attract more leads and convert visitors into loyal customers</p>
+            </FadeContent>
         </div> 
 
         <div className='relative w-full max-w-[1000px] mx-auto'>

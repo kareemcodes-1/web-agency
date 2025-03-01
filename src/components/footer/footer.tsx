@@ -13,7 +13,7 @@ const Footer = () => {
               className="mt-[.5rem] lg:text-[1.1rem] text-[1rem] lg:w-[500px] w-full"
               id="footer-text"
             >
-              Elevate Your Digital Presence with Bakhtech Solutions. Crafting Professional Websites for Every Business. Precision, Performance, Perfection – Your Success, Our Mission.
+Transform Your Online Identity. Building Bespoke Websites That Empower Your Brand. Innovation, Excellence, and Results Your Vision, Our Commitment
             </div>
           </div>
 
@@ -21,9 +21,9 @@ const Footer = () => {
                 <h2 className='text-[1rem] font-bold mb-[1rem] uppercase'>Navigation</h2>
               <div className="flex items-start flex-col lg:text-[1rem] text-[.9rem] font-medium lg:gap-[1.4rem] gap-[1rem]">
                 <a href="/">Home</a>
-                <a href="/about">About us</a>
-                <a href="/contact">Testimonials</a>
-                <a href="/products">FAQs</a>
+                <a href="/">About us</a>
+                <a href="/">Testimonials</a>
+                <a href="/">FAQs</a>
               </div>
               </div>
 
@@ -33,9 +33,9 @@ const Footer = () => {
               <div>
                 <h2 className='text-[1rem] font-bold mb-[1rem] uppercase'>Socials</h2>
               <div className="flex items-start flex-col lg:text-[1rem] text-[.9rem] font-medium capitalize  lg:gap-[1.4rem] gap-[1rem]">
-                <a href="/">Home</a>
-                <a href="/about">About us</a>
-                <a href="/contact">Contact us</a>
+                <a href="/">Instagram</a>
+                <a href="/">Facebook</a>
+                <a href="/">Whatsapp</a>
               </div>
               </div>
           {/* </div> */}

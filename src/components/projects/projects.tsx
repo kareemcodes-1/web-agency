@@ -1,3 +1,5 @@
+import SplitText from '../../lib/split-text';
+import FadeContent from '../../lib/fade-content';
 import { useEffect, useState } from 'react';
 import Marquee from 'react-fast-marquee';
 
@@ -59,12 +61,33 @@ const Projects = () => {
         </div>
 
         <div className="py-[50px] lg:mx-[3rem] mx-[1rem]">
-            <div className="w-full mb-[2rem]">
-                <h2 className="lg:text-[6rem] text-[3rem] font-bold"><span className="boska-italic opacity-[.7]">Selected</span> Projects</h2>
+            <div className="w-full mb-[2rem] leading-[1.2]">
+                {/* <h2 className="lg:text-[6rem] text-[3rem] font-bold"><span className="boska-italic opacity-[.7]">Selected</span> Projects</h2> */}
+                <SplitText 
+                text="Selected"
+                delay={30}
+                animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                // easing="easeOutCubic"
+                className='boska-italic opacity-[.7] lg:text-[6rem] text-[3rem] font-bold"'
+                threshold={0.2}
+                rootMargin="0px" />
+
+             <SplitText
+                text="Projects"
+                delay={30}
+                animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                // easing="easeOutCubic"
+                className='satoshi lg:text-[6rem] text-[3rem] font-bold'
+                threshold={0.2}
+                rootMargin="0px" />
             </div>
+            
 
             {/* Marquee for fast scrolling project cards */}
             <Marquee speed={60} gradient={false} className="projects-lg flex  gap-[2rem] " >
+            <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
                 <a href='https://hyperkicks.vercel.app' target='_blank' className="flex items-center justify-between gap-[1rem] z-[10000] mr-[3rem]" onMouseMove={handleMouseOver} onMouseLeave={handleMouseLeave}>
                     <div className="">
                       <img src="/hyper.png" alt="" className="w-full lg:object-cover object-contain lg:h-[25rem] h-[18rem]"/>
@@ -79,7 +102,9 @@ const Projects = () => {
                       </div>
                     </div>
                 </a>
+                </FadeContent>
 
+                <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
                 <a href='https://chiluxury.vercel.app' target='_blank' className="flex items-center justify-between gap-[1rem] z-[10000] mr-[3rem]" onMouseMove={handleMouseOver} onMouseLeave={handleMouseLeave}>
                     <div className="">
                       <img src="/jew.png" alt="" className="w-full lg:object-cover object-contain lg:h-[25rem] h-[18rem]"/>
@@ -94,7 +119,9 @@ const Projects = () => {
                       </div>
                     </div>
                 </a>
+                </FadeContent>
 
+                <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
                 <a href='https://carlhomes.vercel.app' target='_blank' className="flex items-center justify-between gap-[1rem] z-[10000] mr-[3rem]" onMouseMove={handleMouseOver} onMouseLeave={handleMouseLeave}>
                     <div className="">
                       <img src="/carlhomes.png" alt="" className="w-full lg:object-cover object-contain lg:h-[25rem] h-[18rem]"/>
@@ -109,7 +136,9 @@ const Projects = () => {
                       </div>
                     </div>
                 </a>
+                </FadeContent>
 
+                <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
                 <a href='' target='_blank' className="flex items-center justify-between gap-[1rem] z-[10000] mr-[3rem]" onMouseMove={handleMouseOver} onMouseLeave={handleMouseLeave}>
                     <div className="">
                       <img src="/patty.png" alt="" className="w-full lg:object-cover object-contain lg:h-[25rem] h-[18rem]"/>
@@ -124,7 +153,9 @@ const Projects = () => {
                       </div>
                     </div>
                 </a>
+                </FadeContent>
 
+                <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
                 <a href='https://bellavida-spa.vercel.app' target='_blank' className="flex items-center justify-between gap-[1rem] z-[10000] mr-[3rem]" onMouseMove={handleMouseOver} onMouseLeave={handleMouseLeave}>
                     <div className="">
                       <img src="/bellavida.png" alt="" className="w-full lg:object-cover object-contain lg:h-[25rem] h-[18rem]"/>
@@ -139,9 +170,11 @@ const Projects = () => {
                       </div>
                     </div>
                 </a>
+                </FadeContent>
             </Marquee>
 
             <div className="projects-sm flex flex-col gap-[2rem] " >
+            <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
                 <a href='https://hyperkicks.vercel.app' target='_blank' className="flex items-center justify-between gap-[1rem] z-[10000] lg:mr-[3rem]" onMouseMove={handleMouseOver} onMouseLeave={handleMouseLeave}>
                     <div className="">
                       <img src="/hyper.png" alt="" className="w-full object-cover lg:h-[25rem] h-auto"/>
@@ -156,7 +189,9 @@ const Projects = () => {
                       </div>
                     </div>
                 </a>
+                </FadeContent>
 
+                <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
                 <a href='https://chiluxury.vercel.app' target='_blank' className="flex items-center justify-between gap-[1rem] z-[10000] lg:mr-[3rem]" onMouseMove={handleMouseOver} onMouseLeave={handleMouseLeave}>
                     <div className="">
                       <img src="/jew.png" alt="" className="w-full object-cover lg:h-[25rem] h-auto"/>
@@ -171,8 +206,9 @@ const Projects = () => {
                       </div>
                     </div>
                 </a>
+                </FadeContent>
 
-
+                <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
                 <a href='https://carlhomes.vercel.app' target='_blank' className="flex items-center justify-between gap-[1rem] z-[10000] lg:mr-[3rem]" onMouseMove={handleMouseOver} onMouseLeave={handleMouseLeave}>
                     <div className="">
                       <img src="/carlhomes.png" alt="" className="w-full object-cover lg:h-[25rem] h-auto"/>
@@ -187,8 +223,9 @@ const Projects = () => {
                       </div>
                     </div>
                 </a>
+                </FadeContent>
 
-
+                <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
                 <a href='' target='_blank' className="flex items-center justify-between gap-[1rem] z-[10000] lg:mr-[3rem]" onMouseMove={handleMouseOver} onMouseLeave={handleMouseLeave}>
                     <div className="">
                       <img src="/patty.png" alt="" className="w-full object-cover lg:h-[25rem] h-auto"/>
@@ -203,8 +240,9 @@ const Projects = () => {
                       </div>
                     </div>
                 </a>
+                </FadeContent>
 
-
+                <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
                 <a href='https://bellavida-spa.vercel.app' target='_blank' className="flex items-center justify-between gap-[1rem] z-[10000] lg:mr-[3rem]" onMouseMove={handleMouseOver} onMouseLeave={handleMouseLeave}>
                     <div className="">
                       <img src="/bellavida.png" alt="" className="w-full object-cover lg:h-[25rem] h-auto"/>
@@ -219,6 +257,7 @@ const Projects = () => {
                       </div>
                     </div>
                 </a>
+                </FadeContent>
             </div>
         </div>
     </div>

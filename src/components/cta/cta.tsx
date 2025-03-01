@@ -1,3 +1,4 @@
+import SplitText from "../../lib/split-text";
 import Marquee from "react-fast-marquee";
 
 const CTA = () => {
@@ -13,9 +14,31 @@ const CTA = () => {
              </div>
         </div>
 
-        <div className='relative z-[99999] lg:px-[80px] pl-[1rem] gap-[.8rem]'>
-            <h2 className='lg:text-[4rem] text-[2rem] font-bold'>Ready to get started? <br />
-            <span className="boska-italic opacity-[.7]"> Let's make it happen.</span></h2>
+        <div className='relative z-[99999] lg:px-[80px] pl-[1rem] gap-[.8rem] leading-[1.2]'>
+            {/* <h2 className='lg:text-[4rem] text-[2rem] font-bold'>Ready to get started? <br /> */}
+            <SplitText
+                text="Ready to get started?"
+                delay={30}
+                animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                // easing="easeOutCubic"
+                className="lg:text-[4rem] text-[2rem] font-bold"
+                threshold={0.2}
+                rootMargin="0px" />
+
+                <br />
+
+                <SplitText
+                text="Let's make it happen."
+                delay={30}
+                animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                // easing="easeOutCubic"
+                className="lg:text-[4rem] text-[2rem] font-bold boska-italic opacity-[.7]"
+                threshold={0.2}
+                rootMargin="0px" />
+                
+            {/* <span className="boska-italic opacity-[.7]"> Let's make it happen.</span></h2> */}
             <p className='text-[#ffffffb3] lg:text-[1.2rem] text-[1rem]">'>Ready to take the next step? Join us now and start transforming your vision into reality with expert support.</p>
             {/* <button type="button" className='button mt-[2rem] !bg-[#caef45] !text-black z-[100]'>BOOK A CALL</button> */}
         </div>
