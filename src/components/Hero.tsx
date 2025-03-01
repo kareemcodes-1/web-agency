@@ -25,7 +25,7 @@ const Hero = () => {
           <img src="https://cdn.prod.website-files.com/623865af2eee366912508587/623d5980fbc033885da2c334_Highlight_05.svg" loading="lazy" alt='' className='lg:block hidden -top-[20px] left-[50px] right-auto bottom-auto h-auto  w-[46px] absolute '/>
           {/* <h1 className='satoshi font-bold lg:text-[5rem] text-[3rem] lg:w-[800px] w-full lg:leading-[6rem] leading-[4.5rem]  z-[111111]'>Struggling to get more <span className='boska-italic'>leads</span> for your business?</h1> */}
 
-          <div className='lg:w-[800px] w-full  leading-[1.2]'>
+          <div className='lg:w-[800px] w-full lg:leading-[1.2]  leading-[1.3]'>
           <SplitText 
                 text="Struggling to get more"
                 delay={30}
