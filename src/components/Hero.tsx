@@ -25,7 +25,7 @@ const Hero = () => {
           <img src="https://cdn.prod.website-files.com/623865af2eee366912508587/623d5980fbc033885da2c334_Highlight_05.svg" loading="lazy" alt='' className='lg:block hidden -top-[20px] left-[50px] right-auto bottom-auto h-auto  w-[46px] absolute '/>
           {/* <h1 className='satoshi font-bold lg:text-[5rem] text-[3rem] lg:w-[800px] w-full lg:leading-[6rem] leading-[4.5rem]  z-[111111]'>Struggling to get more <span className='boska-italic'>leads</span> for your business?</h1> */}
 
-          <div className='lg:w-[800px] w-full lg:leading-[6rem] !leading-[4.5rem]'>
+          <div className='lg:w-[800px] w-full  leading-[1.2]'>
           <SplitText 
                 text="Struggling to get more"
                 delay={30}
@@ -33,7 +33,7 @@ const Hero = () => {
                 animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
                 // easing="easeOutCubic"
                 threshold={0.2}
-                rootMargin="0px" className="satoshi font-bold lg:text-[5rem] text-[3rem] lg:w-[800px] w-full lg:leading-[6rem] leading-[4.5rem]  z-[111111]" />
+                rootMargin="0px" className="satoshi font-bold lg:text-[5rem] text-[3rem] lg:w-[800px] w-full  z-[111111]" />
 
            
 
@@ -44,7 +44,7 @@ const Hero = () => {
                 animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
                 // easing="easeOutCubic"
                 threshold={0.2}
-                rootMargin="0px" className="boska-italic font-bold lg:text-[5rem] text-[3rem] lg:w-[800px] w-full lg:leading-[6rem] leading-[4.5rem]  z-[111111]" />
+                rootMargin="0px" className="boska-italic font-bold lg:text-[5rem] text-[3rem] lg:w-[800px] w-full   z-[111111]" />
 
            <SplitText 
                 text="for your business?"
@@ -53,7 +53,7 @@ const Hero = () => {
                 animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
                 // easing="easeOutCubic"
                 threshold={0.2}
-                rootMargin="0px" className="satoshi font-bold lg:text-[5rem] text-[3rem] lg:w-[800px] w-full lg:leading-[6rem] leading-[4.5rem]  z-[111111]" />
+                rootMargin="0px" className="satoshi font-bold lg:text-[5rem] text-[3rem] lg:w-[800px] w-full   z-[111111]" />
           </div>
 
           </div>
