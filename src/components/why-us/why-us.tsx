@@ -95,7 +95,7 @@ const WhyUs = () => {
                   </div>
 
                   <div className='relative'>
-                      <h1 className="lg:text-[2rem] text-[1.5rem] font-bold text-center">Other Web Designers</h1>
+                      <h1 className="lg:text-[2rem] text-[1.5rem] font-bold text-center">Other Web Developers</h1>
                        <div className='why-us-feature-wrapper'>
                             <div className='mb-[32px] lg:text-[1.1rem] text-[.925rem] leading-[24px] font-bold tracking-[0.12em] uppercase'>
                                 Features not included :

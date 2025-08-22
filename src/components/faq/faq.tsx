@@ -93,8 +93,8 @@ const Faq = () => {
             <AccordionTrigger className="lg:text-[1.5rem] text-[1.2rem]">
               What makes you different from other freelancers?
             </AccordionTrigger>
-            <AccordionContent>
-              We pride ourselves on offering affordable prices without
+            <AccordionContent className="lg:text-[1.2rem] text-[1rem] leading-[1.3] text-gray-700">
+              I offer affordable prices without
               compromising on quality, ensuring that exceptional websites are
               accessible to businesses of all sizes. Our quick turnaround times
               mean you won't have to wait months on end to see your vision come
@@ -105,11 +105,11 @@ const Faq = () => {
           </AccordionItem>
 
           <AccordionItem value="item-5">
-            <AccordionTrigger className="lg:text-[1.5rem] text-[1/2rem]">
+            <AccordionTrigger className="lg:text-[1.5rem] text-[1.2rem]">
               Will my website be mobile-friendly?
             </AccordionTrigger>
             <AccordionContent className="lg:text-[1.2rem] text-[1rem] leading-[1.3] text-gray-700">
-              Absolutely! We ensure all websites are responsive and look great
+              Absolutely! I ensure all websites are responsive and look great
               on all devices, including desktop, tablet, and mobile.
             </AccordionContent>
           </AccordionItem>
