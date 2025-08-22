@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="footer mt-[5rem] pb-[4rem]">
+    <footer className="footer mt-[5rem] pb-[2rem]">
       <div className="footer_container container-1 mx-[2rem]">
         <div className="flex lg:flex-row flex-col lg:items-center items-start  lg:gap-[10rem] gap-[2rem]  mb-[2rem]">
           <div className="lg:mb-[3rem] w-auto">
@@ -51,7 +51,7 @@ const Footer = () => {
 
         <p className="text-center border-t  mx-auto flex items-center justify-center text-[1.1rem] w-full py-[1rem] mt-[1.5rem]">
           <span className="lg:block hidden">© 2024</span> &nbsp;{" "}
-          <span className="nav-logo font-bold text-[1.3rem]">
+          <span className="lg:hidden block nav-logo font-bold text-[1.3rem]">
             bykareem <sup>©</sup>
           </span>{" "}
           &nbsp; <span className=" lg:block hidden">All Rights Reserved</span>
