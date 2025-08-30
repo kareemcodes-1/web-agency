@@ -97,9 +97,7 @@ const About = () => {
 
          <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
           <p className="lg:text-[1.2rem] text-[1rem]">
-            With a passion for design and development, I take projects from
-            ideation to launch, ensuring a seamless journey that leaves a
-            lasting positive impact on the digital landscape and your business.
+            I specialize in transforming ideas into high-performing websites that are both visually engaging and strategically built to drive business growth. From concept to launch, I ensure every project delivers a seamless user experience, strong functionality, and measurable impact.
           </p>
           </FadeContent>
 

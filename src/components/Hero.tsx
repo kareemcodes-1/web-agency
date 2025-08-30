@@ -71,8 +71,7 @@ const Hero = () => {
            target='_blank'
             className='flex items-center gap-[.5rem] button mt-[2rem] hover:bg-[#caef45] hover:text-black z-[100] group transition'
           >
-              {/* Yes, I Need More Leads! */}
-              Get More Leads Now!
+             Hire me now
            <ArrowUpRight className='w-[2rem] h-[2rem] transition-transform transform group-hover:rotate-[43deg]' />
         </a>
         </FadeContent>

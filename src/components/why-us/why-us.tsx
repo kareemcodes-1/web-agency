@@ -87,10 +87,10 @@ const WhyUs = () => {
                                 <div className='lg:text-[20px] text-[18px] leading-[32px] font-medium'>Fast Project Delivery</div>
                             </div>
 
-                            <div className='flex mb-[16px] justify-start items-start'>
+                            {/* <div className='flex mb-[16px] justify-start items-start'>
                                 <img src="https://cdn.prod.website-files.com/623865af2eee366912508587/623cb4df9afa8cfe86eea257_CheckCircle%20Green.svg" className='lg:w-[32px] w-[30px] lg:h-[32px] h-[30px] lg:mr-[20px] mr-[15px]' alt="" />
                                 <div className='lg:text-[20px] text-[18px] leading-[32px] font-medium'>AI Agent For Lead Generation  </div>
-                            </div>
+                            </div> */}
                        </div>
                   </div>
 
@@ -126,10 +126,10 @@ const WhyUs = () => {
                                 <div className='lg:text-[20px] text-[18px] leading-[32px] font-medium'>Overpromising and underdelivering</div>
                             </div>
 
-                            <div className='flex mb-[16px] justify-start items-start'>
+                            {/* <div className='flex mb-[16px] justify-start items-start'>
                                 <img src="https://cdn.prod.website-files.com/623865af2eee366912508587/623cb4e07a1868188d4408d2_XCircle.svg" className='lg:w-[32px] w-[30px] lg:h-[32px] h-[30px] lg:mr-[20px] mr-[15px]' alt="" />
                                 <div className='lg:text-[20px] text-[18px] leading-[32px] font-medium'>No AI integration</div>
-                            </div>
+                            </div> */}
                        </div>
                   </div>
               </div>

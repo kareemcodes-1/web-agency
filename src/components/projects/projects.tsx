@@ -1,9 +1,8 @@
 import SplitText from "../../lib/split-text";
 import FadeContent from "../../lib/fade-content";
 import { useEffect, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
+import Marquee from "react-fast-marquee";
+import { projects } from "../../lib/data";
 
 const Projects = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -93,634 +92,108 @@ const Projects = () => {
             />
           </div>
 
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={30}
-            slidesPerView={"auto"}
-            autoplay={{
-              delay: 0,
-              disableOnInteraction: false,
-            }}
-            speed={6000}
-            loop={true}
-            freeMode={true}
-            className="projects-lg flex gap-[2rem]"
+          {/* <div className=""> */}
+            <Marquee
+            speed={300}
+            gradient={false}
+            pauseOnHover
+            className="!flex gap-[3rem]"
           >
-
-            <SwiperSlide className="!w-auto">
+            {/* project cards */}
+            {projects.map((proj, i) => (
               <FadeContent
+                key={i}
                 blur
+                duration={1000}
+                easing="ease-out"
+                initialOpacity={0}
+                className="lg:block hidden !w-auto"
+              >
+                <a
+                  href={proj.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full object-cover lg:h-[25rem] h-[18rem]" // 👈 add margin
+                  onMouseMove={() => setHovered(true)}
+                  onMouseLeave={() => setHovered(false)}
+                >
+                  <img
+                    src={proj.img}
+                    alt={proj.title}
+                    className="w-full object-cover lg:h-[25rem] h-[18rem]"
+                  />
+                  <div className="flex flex-col">
+                    <h2 className="lg:text-[2rem] text-[1.5rem] font-bold">
+                      {proj.title}
+                    </h2>
+                    <div className="flex flex-wrap gap-[.5rem] mt-[.5rem]">
+                      {proj.tags.map((tag, idx) => (
+                        <div
+                          key={idx}
+                          className={`text-[1rem] font-bold py-[.3rem] px-[.8rem] rounded-[2rem] uppercase ${
+                            idx === proj.tags.length - 1
+                              ? "bg-[#2ba275] text-white"
+                              : "border border-[#989696ad]"
+                          }`}
+                        >
+                          {tag}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </a>
+              </FadeContent>
+            ))}
+          </Marquee>
+          {/* </div> */}
+
+          <div className="projects-sm flex flex-col gap-[2rem]">
+            {projects.map((proj, i) => (
+              <FadeContent
+                key={i}
+                blur={true}
                 duration={1000}
                 easing="ease-out"
                 initialOpacity={0}
               >
                 <a
-                  href="https://hyperkicks.vercel.app"
+                  href={proj.href}
                   target="_blank"
-                  className="flex items-center justify-between gap-[1rem] z-[10000] mr-[3rem]"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between gap-[1rem] z-[10000] lg:mr-[3rem]"
                   onMouseMove={handleMouseOver}
                   onMouseLeave={handleMouseLeave}
                 >
                   <div>
                     <img
-                      src="/hype.png"
-                      alt=""
-                      className="w-full lg:object-cover object-contain lg:h-[25rem] h-[18rem]"
-                    />
-                    <div className="flex items-center justify-between">
-                      <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">
-                        Hyper Kicks
-                      </h2>
-                      <div className="flex items-center gap-[.5rem] mt-[.5rem]">
-                        <div className="text-[1rem] font-bold border border-[#989696ad] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase">
-                          E-commerce
-                        </div>
-                        <div className="text-[1rem] font-bold border border-[#989696ad] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase">
-                          Sneaker
-                        </div>
-                        <div className="text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase">
-                          2024
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </FadeContent>
-            </SwiperSlide>
-
-            <SwiperSlide className="!w-auto">
-              <FadeContent
-                blur
-                duration={1000}
-                easing="ease-out"
-                initialOpacity={0}
-              >
-                <a
-                  href="https://zuvora.vercel.app"
-                  target="_blank"
-                  className="flex items-center justify-between gap-[1rem] z-[10000] mr-[3rem]"
-                  onMouseMove={handleMouseOver}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <div>
-                    <img
-                      src="/zuvora.png"
-                      alt=""
-                      className="w-full lg:object-cover object-contain lg:h-[25rem] h-[18rem]"
-                    />
-                    <div className="flex items-center justify-between">
-                      <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">
-                        Zuvora
-                      </h2>
-                      <div className="flex items-center gap-[.5rem] mt-[.5rem]">
-                        <div className="text-[1rem] font-bold border border-[#989696ad] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase">
-                          E-commerce
-                        </div>
-                        <div className="text-[1rem] font-bold border border-[#989696ad] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase">
-                          Clothing
-                        </div>
-                        <div className="text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase">
-                          2024
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </FadeContent>
-            </SwiperSlide>
-
-            <SwiperSlide className="!w-auto">
-              <FadeContent
-                blur
-                duration={1000}
-                easing="ease-out"
-                initialOpacity={0}
-              >
-                <a
-                  href="https://veloura-ecom.vercel.app"
-                  target="_blank"
-                  className="flex items-center justify-between gap-[1rem] z-[10000] lg:mr-[3rem]"
-                  onMouseMove={handleMouseOver}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <div className="">
-                    <img
-                      src="/veloura.png"
-                      alt=""
+                      src={proj.img}
+                      alt={proj.title}
                       className="w-full object-cover lg:h-[25rem] h-auto"
                     />
                     <div className="flex lg:flex-row flex-col lg:items-center items-start justify-between mt-[.5rem]">
                       <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">
-                        Veloura
+                        {proj.title}
                       </h2>
 
                       <div className="flex items-center gap-[.5rem] mt-[.5rem]">
-                        <div
-                          className={
-                            "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                          }
-                        >
-                          E-commerce
-                        </div>
-                        <div
-                          className={
-                            "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                          }
-                        >
-                          Jewellery
-                        </div>
-                        <div
-                          className={
-                            "text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                          }
-                        >
-                          2024
-                        </div>
+                        {proj.tags.map((tag, idx) => (
+                          <div
+                            key={idx}
+                            className={`text-[1rem] font-bold py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max ${
+                              idx === proj.tags.length - 1
+                                ? "bg-[#2ba275] text-white"
+                                : "border border-[#989696ad] dark:border-[#9896963b]"
+                            }`}
+                          >
+                            {tag}
+                          </div>
+                        ))}
                       </div>
                     </div>
                   </div>
                 </a>
               </FadeContent>
-            </SwiperSlide>
-
-            <SwiperSlide className="!w-auto">
-              <FadeContent
-                blur
-                duration={1000}
-                easing="ease-out"
-                initialOpacity={0}
-              >
-                <a
-                  href="https://carlhomes.vercel.app"
-                  target="_blank"
-                  className="flex items-center justify-between gap-[1rem] z-[10000] lg:mr-[3rem]"
-                  onMouseMove={handleMouseOver}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <div className="">
-                    <img
-                      src="/carlhomes.png"
-                      alt=""
-                      className="w-full object-cover lg:h-[25rem] h-auto"
-                    />
-                    <div className="flex lg:flex-row flex-col lg:items-center items-start justify-between mt-[.5rem]">
-                      <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">
-                        Carl Homes
-                      </h2>
-
-                      <div className="flex items-center gap-[.5rem] mt-[.5rem]">
-                        <div
-                          className={
-                            "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                          }
-                        >
-                          Real Estate
-                        </div>
-                        <div
-                          className={
-                            "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                          }
-                        >
-                          Design
-                        </div>
-                        <div
-                          className={
-                            "text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                          }
-                        >
-                          2024
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </FadeContent>
-            </SwiperSlide>
-
-            <SwiperSlide className="!w-auto">
-              <FadeContent
-                blur
-                duration={1000}
-                easing="ease-out"
-                initialOpacity={0}
-              >
-                <a
-                  href=""
-                  target="_blank"
-                  className="flex items-center justify-between gap-[1rem] z-[10000] lg:mr-[3rem]"
-                  onMouseMove={handleMouseOver}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <div className="">
-                    <img
-                      src="/patties.png"
-                      alt=""
-                      className="w-full object-cover lg:h-[25rem] h-auto"
-                    />
-                    <div className="flex lg:flex-row flex-col lg:items-center items-start justify-between mt-[.5rem]">
-                      <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">
-                        Patties
-                      </h2>
-
-                      <div className="flex items-center gap-[.5rem] mt-[.5rem]">
-                        <div
-                          className={
-                            "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                          }
-                        >
-                          E-commerce
-                        </div>
-                        <div
-                          className={
-                            "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                          }
-                        >
-                          Design
-                        </div>
-                        <div
-                          className={
-                            "text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                          }
-                        >
-                          2024
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </FadeContent>
-            </SwiperSlide>
-
-            <SwiperSlide className="!w-auto">
-              <FadeContent
-                blur
-                duration={1000}
-                easing="ease-out"
-                initialOpacity={0}
-              >
-                <a
-                  href="https://bellavida-spa.vercel.app"
-                  target="_blank"
-                  className="flex items-center justify-between gap-[1rem] z-[10000] lg:mr-[3rem]"
-                  onMouseMove={handleMouseOver}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <div className="">
-                    <img
-                      src="/bellavida.png"
-                      alt=""
-                      className="w-full object-cover lg:h-[25rem] h-auto"
-                    />
-                    <div className="flex lg:flex-row flex-col lg:items-center items-start justify-between mt-[.5rem]">
-                      <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">
-                        Bellavida Spa
-                      </h2>
-
-                      <div className="flex items-center gap-[.5rem] mt-[.5rem]">
-                        <div
-                          className={
-                            "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                          }
-                        >
-                          Beauty
-                        </div>
-                        <div
-                          className={
-                            "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                          }
-                        >
-                          Design
-                        </div>
-                        <div
-                          className={
-                            "text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                          }
-                        >
-                          2024
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </FadeContent>
-            </SwiperSlide>
-          </Swiper>
-
-          <div className="projects-sm flex flex-col gap-[2rem] ">
-
-            <FadeContent
-              blur={true}
-              duration={1000}
-              easing="ease-out"
-              initialOpacity={0}
-            >
-              <a
-                href="https://hyperkicks.vercel.app"
-                target="_blank"
-                className="flex items-center justify-between gap-[1rem] z-[10000] lg:mr-[3rem]"
-                onMouseMove={handleMouseOver}
-                onMouseLeave={handleMouseLeave}
-              >
-                <div className="">
-                  <img
-                    src="/hype.png"
-                    alt=""
-                    className="w-full object-cover lg:h-[25rem] h-auto"
-                  />
-                  <div className="flex lg:flex-row flex-col lg:items-center items-start justify-between mt-[.5rem]">
-                    <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">
-                      Hyper Kicks
-                    </h2>
-
-                    <div className="flex items-center gap-[.5rem] mt-[.5rem]">
-                      <div
-                        className={
-                          "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        E-commerce
-                      </div>
-                      <div
-                        className={
-                          "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        Sneaker
-                      </div>
-                      <div
-                        className={
-                          "text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        2024
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </FadeContent>
-
-            <FadeContent
-              blur={true}
-              duration={1000}
-              easing="ease-out"
-              initialOpacity={0}
-            >
-              <a
-                href="https://zuvora.vercel.app"
-                target="_blank"
-                className="flex items-center justify-between gap-[1rem] z-[10000] lg:mr-[3rem]"
-                onMouseMove={handleMouseOver}
-                onMouseLeave={handleMouseLeave}
-              >
-                <div className="">
-                  <img
-                    src="/zuvora.png"
-                    alt=""
-                    className="w-full object-cover lg:h-[25rem] h-auto"
-                  />
-                  <div className="flex lg:flex-row flex-col lg:items-center items-start justify-between mt-[.5rem]">
-                    <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">
-                      Zuvora
-                    </h2>
-
-                    <div className="flex items-center gap-[.5rem] mt-[.5rem]">
-                      <div
-                        className={
-                          "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        E-commerce
-                      </div>
-                      <div
-                        className={
-                          "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        Clothing
-                      </div>
-                      <div
-                        className={
-                          "text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        2024
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </FadeContent>
-
-            <FadeContent
-              blur={true}
-              duration={1000}
-              easing="ease-out"
-              initialOpacity={0}
-            >
-              <a
-                href="https://veloura-ecom.vercel.app"
-                target="_blank"
-                className="flex items-center justify-between gap-[1rem] z-[10000] lg:mr-[3rem]"
-                onMouseMove={handleMouseOver}
-                onMouseLeave={handleMouseLeave}
-              >
-                <div className="">
-                  <img
-                    src="/veloura.png"
-                    alt=""
-                    className="w-full object-cover lg:h-[25rem] h-auto"
-                  />
-                  <div className="flex lg:flex-row flex-col lg:items-center items-start justify-between mt-[.5rem]">
-                    <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">
-                      Veloura
-                    </h2>
-
-                    <div className="flex items-center gap-[.5rem] mt-[.5rem]">
-                      <div
-                        className={
-                          "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        E-commerce
-                      </div>
-                      <div
-                        className={
-                          "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        Design
-                      </div>
-                      <div
-                        className={
-                          "text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        2024
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </FadeContent>
-
-            <FadeContent
-              blur={true}
-              duration={1000}
-              easing="ease-out"
-              initialOpacity={0}
-            >
-              <a
-                href="https://carlhomes.vercel.app"
-                target="_blank"
-                className="flex items-center justify-between gap-[1rem] z-[10000] lg:mr-[3rem]"
-                onMouseMove={handleMouseOver}
-                onMouseLeave={handleMouseLeave}
-              >
-                <div className="">
-                  <img
-                    src="/carlhomes.png"
-                    alt=""
-                    className="w-full object-cover lg:h-[25rem] h-auto"
-                  />
-                  <div className="flex lg:flex-row flex-col lg:items-center items-start justify-between mt-[.5rem]">
-                    <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">
-                      Carl Homes
-                    </h2>
-
-                    <div className="flex items-center gap-[.5rem] mt-[.5rem]">
-                      <div
-                        className={
-                          "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        Real Estate
-                      </div>
-                      <div
-                        className={
-                          "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        Design
-                      </div>
-                      <div
-                        className={
-                          "text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        2024
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </FadeContent>
-
-            
-
-            <FadeContent
-              blur={true}
-              duration={1000}
-              easing="ease-out"
-              initialOpacity={0}
-            >
-              <a
-                href=""
-                target="_blank"
-                className="flex items-center justify-between gap-[1rem] z-[10000] lg:mr-[3rem]"
-                onMouseMove={handleMouseOver}
-                onMouseLeave={handleMouseLeave}
-              >
-                <div className="">
-                  <img
-                    src="/patties.png"
-                    alt=""
-                    className="w-full object-cover lg:h-[25rem] h-auto"
-                  />
-                  <div className="flex lg:flex-row flex-col lg:items-center items-start justify-between mt-[.5rem]">
-                    <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">
-                      Patties
-                    </h2>
-
-                    <div className="flex items-center gap-[.5rem] mt-[.5rem]">
-                      <div
-                        className={
-                          "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        E-commerce
-                      </div>
-                      <div
-                        className={
-                          "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        Design
-                      </div>
-                      <div
-                        className={
-                          "text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        2024
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </FadeContent>
-
-            <FadeContent
-              blur={true}
-              duration={1000}
-              easing="ease-out"
-              initialOpacity={0}
-            >
-              <a
-                href="https://bellavida-spa.vercel.app"
-                target="_blank"
-                className="flex items-center justify-between gap-[1rem] z-[10000] lg:mr-[3rem]"
-                onMouseMove={handleMouseOver}
-                onMouseLeave={handleMouseLeave}
-              >
-                <div className="">
-                  <img
-                    src="/bellavida.png"
-                    alt=""
-                    className="w-full object-cover lg:h-[25rem] h-auto"
-                  />
-                  <div className="flex lg:flex-row flex-col lg:items-center items-start justify-between mt-[.5rem]">
-                    <h2 className="lg:text-[2rem] text-[1.5rem] font-bold tracking-[-0.01em]">
-                      Bellavida Spa
-                    </h2>
-
-                    <div className="flex items-center gap-[.5rem] mt-[.5rem]">
-                      <div
-                        className={
-                          "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        Beauty
-                      </div>
-                      <div
-                        className={
-                          "text-[1rem] font-bold border border-[#989696ad] dark:border-[#9896963b] py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        Design
-                      </div>
-                      <div
-                        className={
-                          "text-[1rem] font-bold bg-[#2ba275] text-white py-[.3rem] px-[.8rem] rounded-[2rem] uppercase lg:w-auto w-max"
-                        }
-                      >
-                        2024
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </FadeContent>
+            ))}
           </div>
         </div>
       </div>

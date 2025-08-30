@@ -50,11 +50,7 @@ const Footer = () => {
         </div>
 
         <p className="text-center border-t  mx-auto flex items-center justify-center text-[1.1rem] w-full py-[1rem] mt-[1.5rem]">
-          <span className="lg:block hidden">© 2024</span> &nbsp;{" "}
-          <span className="lg:hidden block nav-logo font-bold text-[1.3rem]">
-            bykareem <sup>©</sup>
-          </span>{" "}
-          &nbsp; <span className=" lg:block hidden">All Rights Reserved</span>
+          Copyright © 2025 &nbsp; <b>bykareem</b>
         </p>
       </div>
     </footer>
